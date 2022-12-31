@@ -37,13 +37,17 @@
                             <th>id</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                             <th>Direccion</th>
-                             <th>Localidad</th>
-                             <th>Fecha Nac.</th>
-                             <th>Telefono</th>
-                             <th>mail</th>
-                             <th>Modificar</th>
-                             <th>Eliminar</th>
+                            <th>Dni</th>
+                            <th>Cuil</th>
+                            <th>Direccion</th>
+                            <th>Localidad</th>
+                            <th>Codigo postal</th>
+                            <th>Peso</th>
+                            <th>Fecha Nac.</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Modificar</th>
+                            <th>Eliminar</th>
                     </thead>
                     
                     <%
@@ -62,8 +66,12 @@
                          <td><%=resultado.get(i).getIdSocio()%></td>
                          <td><%=resultado.get(i).getNombre()%></td>
                          <td><%=resultado.get(i).getApellido()%></td>
+                         <td><%=resultado.get(i).getDni()%></td>
+                         <td><%=resultado.get(i).getCuil()%></td>
                          <td><%=resultado.get(i).getDireccion()%></td>
                          <td><%=resultado.get(i).getLocalidad()%></td>
+                         <td><%=resultado.get(i).getCodigoPostal()%></td>
+                         <td><%=resultado.get(i).getPeso()%></td>
                          <td><%=resultado.get(i).getFnac()%></td>
                          <td><%=resultado.get(i).getTelefono()%></td>
                          <td><%=resultado.get(i).getMail()%></td>

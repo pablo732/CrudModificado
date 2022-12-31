@@ -16,25 +16,31 @@ public class Socios
    private int idSocio;
     private String nombre;
     private String apellido;
+    private String dni;
+    private String cuil;
     private String direccion;
     private String localidad;
+    private String codigoPostal;
+    private float peso;
     private LocalDate  fnac;
     private String mail;
     private String telefono;
     private boolean activo;
-    
-    
-    public Socios(int idSocio,String nombre,String apellido,String direccion,String localidad,LocalDate fnac,String mail,String telefono, boolean activo)
-    {
-        this.idSocio=idSocio;
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.direccion=direccion;
-        this.localidad=localidad;
-        this.fnac=fnac;
-        this.mail=mail;
-        this.telefono=telefono;
-        this.activo=activo;        
+
+    public Socios(int idSocio, String nombre, String apellido, String dni, String cuil, String direccion, String localidad, String codigoPostal, float peso, LocalDate fnac, String mail, String telefono, boolean activo) {
+        this.idSocio = idSocio;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.cuil = cuil;
+        this.direccion = direccion;
+        this.localidad = localidad;
+        this.codigoPostal = codigoPostal;
+        this.peso = peso;
+        this.fnac = fnac;
+        this.mail = mail;
+        this.telefono = telefono;
+        this.activo = activo;
     }
 
     public int getIdSocio() {
@@ -61,6 +67,22 @@ public class Socios
         this.apellido = apellido;
     }
 
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getCuil() {
+        return cuil;
+    }
+
+    public void setCuil(String cuil) {
+        this.cuil = cuil;
+    }
+
     public String getDireccion() {
         return direccion;
     }
@@ -75,6 +97,22 @@ public class Socios
 
     public void setLocalidad(String localidad) {
         this.localidad = localidad;
+    }
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(String codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
     }
 
     public LocalDate getFnac() {
@@ -109,7 +147,4 @@ public class Socios
         this.activo = activo;
     }
     
-   
-    
-     
 }

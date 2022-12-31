@@ -32,12 +32,28 @@
                             <input type="text" class="form-control" id="apellido" name="apellido">                          
                         </div> 
                          <div class="mb-2">
+                            <label for="apellido" class="form-label" >DNI</label>
+                            <input type="text" class="form-control" id="dni" name="dni">                          
+                        </div> 
+                         <div class="mb-2">
+                            <label for="apellido" class="form-label" >Cuil</label>
+                            <input type="text" class="form-control" id="cuil" name="cuil">                          
+                        </div> 
+                         <div class="mb-2">
                             <label for="direccion" class="form-label" >Direccion</label>
                             <input type="text" class="form-control" id="direccion" name="direccion">                          
                         </div> 
                          <div class="mb-2">
                             <label for="localidad" class="form-label" >Localidad</label>
                             <input type="text" class="form-control" id="localidad" name="localidad">                          
+                        </div> 
+                        <div class="mb-2">
+                            <label for="localidad" class="form-label" >Codigo postal</label>
+                            <input type="text" class="form-control" id="codigoPostal" name="codigoPostal">                          
+                        </div> 
+                        <div class="mb-2">
+                            <label for="localidad" class="form-label" >Peso</label>
+                            <input type="text" class="form-control" id="peso" name="peso">                          
                         </div> 
                           <div class="mb-2">
                             <label for="fnac" class="form-label" >Fecha Nac</label>
@@ -50,7 +66,7 @@
                         <div class="mb-2">
                             <label for="telefono" class="form-label" >Telefono</label>
                             <input type="text" class="form-control" id="telefono" name="telefono">                          
-                        </div>                
+                        </div>             
                                                
                         <button type="submit" class="btn btn-primary" >Añadir </button>
                         

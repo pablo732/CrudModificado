@@ -56,12 +56,16 @@ public class SociosController extends HttpServlet
                         int id=Integer.parseInt(request.getParameter("id"));
                         String nombre=request.getParameter("nombre");
                         String apellido=request.getParameter("apellido");
+                        String dni=request.getParameter("dni");
+                        String cuil=request.getParameter("cuil");
                         String direccion=request.getParameter("direccion");
                         String localidad=request.getParameter("localidad");            
+                        String codigoPostal=request.getParameter("codigoPostal");            
+                        float peso=Float.parseFloat(request.getParameter("peso"));            
                         LocalDate fecha =LocalDate.parse(request.getParameter("fnac"));                 
                         String email=request.getParameter("mail");
                         String telefono=request.getParameter("telefono");                                    
-                        Socios s1=new Socios(id,nombre,apellido,direccion,localidad,fecha,email,telefono,true);
+                        Socios s1=new Socios(id,nombre,apellido,dni,cuil,direccion,localidad,codigoPostal,peso,fecha,email,telefono,true);
 		        sociosDAO.ActualizarSocios(s1);			
 			dispatcher=request.getRequestDispatcher("vistas/socios.jsp");			
 		}
@@ -79,12 +83,16 @@ public class SociosController extends HttpServlet
 		{
 			String nombre=request.getParameter("nombre");
                         String apellido=request.getParameter("apellido");
+                        String dni=request.getParameter("dni");
+                        String cuil=request.getParameter("cuil");
                         String direccion=request.getParameter("direccion");
                         String localidad=request.getParameter("localidad");            
+                        String codigoPostal=request.getParameter("codigoPostal");            
+                        float peso=Float.parseFloat(request.getParameter("peso"));            
                         LocalDate fecha =LocalDate.parse(request.getParameter("fnac"));                 
                         String email=request.getParameter("mail");
-                        String telefono=request.getParameter("telefono");                                     
-                        Socios s1=new Socios(0,nombre,apellido,direccion,localidad,fecha,email,telefono,true);
+                        String telefono=request.getParameter("telefono");                                    
+                        Socios s1=new Socios(0,nombre,apellido,dni,cuil,direccion,localidad,codigoPostal,peso,fecha,email,telefono,true);
 		        sociosDAO.InsertSocios(s1);		
 			dispatcher=request.getRequestDispatcher("vistas/socios.jsp");
 		}        
